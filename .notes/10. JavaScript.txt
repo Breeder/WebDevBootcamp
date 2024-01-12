@@ -1,0 +1,96 @@
+*******************************************************************************
+- Types of variables in JavaScript
+*******************************************************************************
+ In JavaScript, there are three different variable types: var, let, and const.
+ Each of these variables have several rules around how they should be used, and
+ have different characteristics.
+
+ JavaScript uses camel case to declare variable names. This refers to writing
+ the first word of a variable in lower case, then capitalizing every future
+ word in the variable. If you declare a variable using the const keyword, every
+ letter should be in uppercase.
+
+ The var keyword is used in all JavaScript code from 1995 to 2015.
+ The let and const keywords were added to JavaScript in 2015.
+
+ If you want your code to run in older browsers, you must use var.
+ Use const as much as possible, unless you need to redeclare or hoist a
+ variable. Use let if you are working with loops. If you think the value of
+ the variable can change, also use let. Const variables are constant and
+ cannot change but let variables can.
+
+*******************************************************************************
+- Explain redeclaration of variables
+*******************************************************************************
+ In JavaScript, only var variables can be redeclared. This means that you can
+ create a new variable with the same name and keep its value, or assign the
+ variable a different value.
+
+ Here’s an example of a program that declares a variable called radioShow,
+ then redeclares the variable:
+
+ var radioShow = "KACL";
+ var radioShow;
+
+ console.log(radioShow);
+
+ Our code returns: KACL . In our code, we have declared radioShow twice.
+ Although it is not useful in the above example, if we had a longer program,
+ we may want to redeclare a variable. As a result, if we expect to want to
+ redeclare a variable, we should use var to declare it.
+
+*******************************************************************************
+- Explain hoisting of variables
+*******************************************************************************
+ In JavaScript, a variable can be declared after it has been used, which means
+ that you can use a variable before it has been declared. This behavior is
+ referred to as hoisting.
+
+ Let’s use an example to illustrate how hoisting works. Let’s say that we
+ declare a variable called students which contains a list of student names, but
+ we declare that variable after we ask our program to print it:
+
+ console.log(students);
+ var students = ['Andy', 'April', 'Donald'];
+ Our program returns:
+ undefined
+
+ But if we tried to declare our variable without the var keyword, our program
+ would return the following:
+ Uncaught ReferenceError: students is not defined
+
+ This shows hoisting in action. Variables can be declared after they are
+ referenced using the var keyword. In simple terms, our program interpreted our
+ above example like this:
+
+ var students;
+ console.log(students);
+ students = ['Andy', 'April', 'Donald'];
+
+ Unlike variables declared using var , let and const variables cannot be
+ hoisted. Here’s an example of a program that uses let to declare a variable:
+
+ let name = "Graham Rand";
+
+ function exampleFunction() {
+ 	if (name === "Mark Swinton") {
+ 		let name = "Mark Swinton";
+ 	}
+ 	console.log(name);
+ }
+
+ exampleFunction();
+
+ When our code runs, the following result will be returned: Graham Rand. The
+ let name = Mark Swinton; declaration is enclosed within our function, which
+ means that it has local scope. Because we use the let keyword, our variable
+ is not hoisted.
+
+ In summary, variables using var are subject to hoisting, which saves variable
+ declarations in memory. This may result in problems if you define and assign
+ your variables in the wrong order.
+
+ let and const variables are not subject to this feature, however, which means
+ that an error will be returned if you try to declare a variable more than
+ once, or reference a variable that has not yet been declared in the relevant
+ scope.

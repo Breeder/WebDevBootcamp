@@ -1,0 +1,16 @@
+*******************************************************************************
+- Can a web developer make a mobile app?
+*******************************************************************************
+ There are lot of packager/compilers available in market. Using them, you can
+ easily create apps using HTML, CSS, JavaScript, etc. Moreover, you will be
+ able to port and install your app on many different platforms like iOS,
+ Android, Windows, etc.
+
+ I have mentioned some of them below:
+ Cordova
+ jQuery Mobile
+ jQT
+ Lungo
+ Ionic
+ Ratchet
+ Sencha Touch

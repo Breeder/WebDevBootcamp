@@ -1,0 +1,404 @@
+<!-- I'm a comment -->
+
+<!-- Examples of semantic elements: main, header, footer, nav, section, article
+                                    figure, figcaption, time, details, summary, aside etc...
+-->
+<!DOCTYPE html>
+<!-- In HTML, the doctype is the required "<!DOCTYPE html>" preamble found at
+the top of all documents. Its sole purpose is to prevent a browser from switching
+into so-called "quirks mode" when rendering a document; that is, the "<!DOCTYPE html>"
+doctype ensures that the browser makes a best-effort attempt at following the relevant
+specifications, rather than using a different rendering mode that is incompatible with
+some specifications.
+
+!DOCTYPE (and img tags too) doesn't have a closing!
+-->
+<html lang="en">
+    <head>
+        <!-- The <head> HTML element contains machine-readable information (metadata)
+        about the document, like its title, scripts, and style sheets.
+        -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="JavaScript Playground.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    <!-- The <body> HTML element represents the content of an HTML document. There
+    can be only one <body> element in a document.
+    -->
+        <header>
+        <!-- The <header> HTML element represents introductory content,
+        typically a group of introductory or navigational aids. It may contain
+        some heading elements but also a logo, a search form, an author name,
+        and other elements.
+        -->
+            <nav>
+            <!-- <nav> HTML element represents a section of a page whose purpose
+            is to provide navigation links, either within the current document
+            or to other documents. Common examples of navigation sections are
+            menus, tables of contents, and indexes.
+            -->
+                <ul>
+                <!-- The <ul> HTML element represents an unordered list of items,
+                typically rendered as a bulleted list.
+                -->
+                    <li><a href="#">Bikes</a></li>
+                    <!-- The <li> HTML element is used to represent an item in a list.
+                    It must be contained in a parent element: an ordered list (<ol>),
+                    an unordered list (<ul>), or a menu (<menu>). In menus and unordered
+                    lists, list items are usually displayed using bullet points. In ordered
+                    lists, they are usually displayed with an ascending counter on the
+                    left, such as a number or letter.
+                    -->
+                    <li>
+                        Types:
+                        <ul>
+                            <li><a href="#">BMX</a></li>
+                            <li><a href="#">Jump Bike 3000</a></li>
+                            <!-- The <a> HTML element (or anchor element), with its href attribute,
+                            creates a hyperlink to web pages, files, email addresses, locations in
+                            the same page, or anything else a URL can address.
+
+                            Content within each <a> should indicate the link's destination. If the
+                            href attribute is present, pressing the enter key while focused on the
+                            <a> element will activate it.
+                            -->
+                        </ul>
+                    </li>
+                </ul>
+                <ol>
+                <!-- The <ol> HTML element represents an ordered list of items — typically
+                rendered as a numbered list.
+                -->
+                    <li>List 1</li>
+                    <li>List 2</li>
+                    <li>List 3</li>
+                </ol>
+            </nav>
+        </header>
+        <!---------------------------------------------------------------------------------------------------->
+        <main>
+        <!-- <main> HTML element represents the dominant content of the <body> of
+        a document. The main content area consists of content that is directly
+        related to or expands upon the central topic of a document, or the central
+        functionality of an application.
+
+        The content of a <main> element should be unique to the document. Content
+        that is repeated across a set of documents or document sections such as
+        sidebars, navigation links, copyright information, site logos, and search
+        forms shouldn't be included unless the search form is the main function of
+        the page.
+        -->
+
+            <h1>Pangolin</h1>
+            <!--The <h1> to <h6> HTML elements represent six levels of section headings.
+            <h1> is the highest section level and <h6> is the lowest. By default, all
+            heading elements create a block-level box in the layout, starting on a
+            new line and taking up the full width available in their containing block.
+            -->
+            <hr />
+            <!-- The <hr> HTML element represents a thematic break (horizontal rule)
+            between paragraph-level elements: for example, a change of scene in a story,
+            or a shift of topic within a section. Note that it will create a line
+            -->
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/%E0%B0%95%E0%B1%8B%E0%B0%A1%E0%B0%BF_%E0%B0%AA%E0%B0%BF%E0%B0%B2%E0%B1%8D%E0%B0%B2IMG20191207080730-01.jpg/298px-%E0%B0%95%E0%B1%8B%E0%B0%A1%E0%B0%BF_%E0%B0%AA%E0%B0%BF%E0%B0%B2%E0%B1%8D%E0%B0%B2IMG20191207080730-01.jpg"
+            />
+            <img
+                src="pictures/chicken_image.jpg"
+                height="420"
+                alt="Image of the chicken"
+            />
+            <!-- The <img> HTML element embeds an image into the document. The src
+            attribute should contain a valid URL. Since space characters are not
+            allowed in URLs, you have to encode them.
+
+            You can write:
+            <img src="buttons/bu%20hover.png" />
+            But not:
+            <img src="buttons/bu+hover.png" />
+
+            The href attribute on a and area elements must have a value that is a
+            valid URL potentially surrounded by spaces.
+            It is not that you can't use whitespace in filenames and links but it is
+            that you shouldn't. It is not best practice to have spaces in your file
+            names, it just complicates things.
+
+            It is also harder for someone to manually type in the address if they
+            wish: www.... /test%20file. It's ugly. Aesthetics do matter for anything
+            a user sees.
+            -->
+
+            <!---------------------------------------------------------------------------------------------------->
+            <section>
+            <!-- <section> HTML element represents a generic standalone section of a document,
+            which doesn't have a more specific semantic element to represent it. Sections should
+            always have a heading, with very few exceptions.
+            -->
+                <h2>Intro</h2>
+                <article class="paragrah_test" id="abcd">
+                <!-- <article> HTML element represents a self-contained composition in a
+                document, page, application, or site, which is intended to be independently
+                distributable or reusable (e.g., in syndication). Examples include: a forum
+                post, a magazine or newspaper article, or a blog entry, a product card, a
+                user-submitted comment, an interactive widget or gadget, or any other
+                independent item of content.
+                -->
+                    <i class="paragrah_test">
+                    <!-- The <i> HTML element represents a range of text that is set off
+                    from the normal text for some reason, such as idiomatic text, technical
+                    terms, taxonomical designations, among others. Historically, these have
+                    been presented using italicized type, which is the original source of
+                    the <i> naming of this element.
+                    -->
+                        Pangolins, sometimes known as scaly anteaters, are
+                        mammals of the order Pholidota (from Ancient Greek
+                        φολῐ́ς, "horny scale"). The one extant family, Manidae,
+                        has three genera: Manis, Phataginus and Smutsia. Manis
+                        comprises the four species found in Asia, while
+                        Phataginus and Smutsia include two species each, all
+                        found in Sub-Saharan Africa. These species range in size
+                        from 30 to 100 cm (12 to 39 in). A number of extinct
+                        pangolin species are also known.
+                    </i>
+                </article>
+                <h2>Poaching</h2>
+                <div class="border_test">
+                <!-- <div> HTML element is the generic container for flow content.
+                It has no effect on the content or layout (except it being a block-level
+                element) until styled in some way using CSS (e.g. styling is directly
+                applied to it, or some kind of layout model like Flexbox is applied to
+                its parent element)
+                -->
+                    Pangolins are threatened by poaching (for their meat and
+                    scales, which are used in Chinese traditional medicine) and
+                    heavy deforestation of their natural habitats, and are the
+                    most trafficked mammals in the world.As of January 2020, of
+                    the eight species of pangolin, three (Manis culionensis, M.
+                    pentadactyla and M. javanica) are listed as critically
+                    endangered, three (Phataginus tricuspis, Manis crassicaudata
+                    and Smutsia gigantea) are listed as endangered and two
+                    (Phataginus tetradactyla and Smutsia temminckii) are listed
+                    as vulnerable on the Red List of Threatened Species of the
+                    International Union for Conservation of Nature.
+                </div>
+                <h2>Description</h2>
+                <span>
+                <!-- The <span> HTML element is a generic inline container for phrasing
+                content, which does not inherently represent anything. It can be used
+                to group elements for styling purposes (using the class or id attributes),
+                or because they share attribute values, such as lang. It should be used
+                only when no other semantic element is appropriate. <span> is very much
+                like a <div> element, but <div> is a block-level element whereas a
+                <span> is an inline-level element.
+                -->
+                    <p>
+                    <!-- The <p> HTML element represents a paragraph. Paragraphs are usually
+                    represented in visual media as blocks of text separated from adjacent
+                    blocks by blank lines and/or first-line indentation, but HTML paragraphs
+                    can be any structural grouping of related content, such as images or form
+                    fields. Paragraphs are block-level elements.
+                    -->
+                        Pangolins have large, protective keratin scales covering
+                        their skin; they are the only known mammals with this
+                        feature. They live in hollow trees or burrows, depending
+                        on the species. Pangolins are nocturnal, and their diet
+                        consists of mainly ants and termites, which they capture
+                        using their long tongues. They tend to be solitary
+                        animals, meeting only to mate and produce a litter of
+                        one to three offspring, which they raise for about two
+                        years.
+                    </p>
+                </span>
+            </section>
+            <!---------------------------------------------------------------------------------------------------->
+            <section>
+                <h2>Auguries of Innocence</h2>
+                <article>
+                    To see a World in a Grain of Sand <br />
+                    And a Heaven in a Wild Flower <br />
+                    Hold Infinity in the palm of your hand <br />
+                    And Eternity in an hour <br />
+                    <!-- The <br> HTML element produces a line break in text
+                    (carriage-return). It is useful for writing a poem or an
+                    address, where the division of lines is significant.
+                    -->
+                    <p>
+                        &#9824; <br />
+                        &nbsp &spades; <br />
+                        &spadesuit;<br />
+                        &num; <br />
+                        &amp; <br />
+                        &numero; <br />
+                        1 &lt; 6 &gt; 5 &amp; &spades; &hearts;
+                        <!-- Examples of various HTML entities They start with an ampersand
+                        and end with a semicolon, but nbsp is an example where it doesn't
+                        have to end with a semicolon though it's better to end it with a
+                        semicolon so it follows the standard and stays more readable
+                        -->
+                    </>
+                </article>
+                <hr />
+
+                <article>
+                    Almost every developer's favorite molecule is
+                    C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also
+                    known as caffeine&nbsp<a
+                        href="https://en.wikipedia.org/wiki/Caffeine"
+                        ><sup>link</sup></a
+                    >
+                    <!-- The <sub> HTML element specifies inline text which should
+                    be displayed as subscript for solely typographical reasons.
+                    Subscripts are typically rendered with a lowered baseline using
+                    smaller text.
+                    -->
+                </article>
+                <hr />
+
+                <article>
+                    <p>
+                        The <em>Pythagorean theorem</em> is often expressed as
+                        the following equation:
+                    </p>
+                    <!-- The <em> HTML element marks text that has stress emphasis.
+                    The <em> element can be nested, with each level of nesting
+                    indicating a greater degree of emphasis.
+                    -->
+                    <div>
+                        <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> =
+                        <var>c<sup>2</sup></var>
+                    </div>
+                    <!-- The <sup> HTML element specifies inline text which is
+                    to be displayed as superscript for solely typographical reasons.
+                    Superscripts are usually rendered with a raised baseline using
+                    smaller text.
+                    -->
+                </article>
+                <hr />
+            </section>
+            <!---------------------------------------------------------------------------------------------------->
+            <section>
+                <figure>
+                <!-- <figure> HTML element represents self-contained content, potentially
+                with an optional caption, which is specified using the <figcaption> element.
+                The figure, its caption, and its contents are referenced as a single unit.
+                -->
+                    <time datetime="2015-05-17 19:00">May 17</time>
+                    <!-- The <time> HTML element represents a specific period in time. It may
+                    include the datetime attribute to translate dates into machine-readable
+                    format, allowing for better search engine results or custom features
+                    such as reminders.
+
+                    It may represent one of the following:
+
+                    - A time on a 24-hour clock.
+                    - A precise date in the Gregorian calendar (with optional time and timezone information).
+                    - A valid time duration.
+
+                    Valid datetime values:
+
+                    a valid year string
+                    2011
+
+                    a valid month string
+                    2011-11
+
+                    a valid date string
+                    2011-11-18
+
+                    a valid yearless date string
+                    11-18
+
+                    a valid week string
+                    2011-W47
+
+                    a valid time string
+                    14:54
+                    14:54:39
+                    14:54:39.929
+
+                    a valid local date and time string
+                    2011-11-18T14:54:39.929
+                    2011-11-18 14:54:39.929
+
+                    a valid global date and time string
+                    2011-11-18T14:54:39.929Z
+                    2011-11-18T14:54:39.929-0400
+                    2011-11-18T14:54:39.929-04:00
+                    2011-11-18 14:54:39.929Z
+                    2011-11-18 14:54:39.929-0400
+                    2011-11-18 14:54:39.929-04:00
+
+                    a valid duration string
+                    PT4H18M3S
+                    -->
+                    <figcaption>Date in figure element</figcaption>
+                    <!-- The <figcaption> HTML element represents a caption or legend describing
+                    the rest of the contents of its parent <figure> element.
+                    -->
+                </figure>
+                <br /><br />
+                <hr />
+            <!---------------------------------------------------------------------------------------------------->
+                <details>
+                <!-- The <details> HTML element creates a disclosure widget in which information is
+                visible only when the widget is toggled into an "open" state. A summary or label must
+                be provided using the <summary> element.
+
+                A disclosure widget is typically presented onscreen using a small triangle which
+                rotates (or twists) to indicate open/closed status, with a label next to the triangle.
+                The contents of the <summary> element are used as the label for the disclosure widget.
+                -->
+                    <summary>
+                    <!-- <summary> HTML element specifies a summary, caption, or legend for a
+                    <details> element's disclosure box. Clicking the <summary> element toggles
+                    the state of the parent <details> element open and closed. -->
+                    I'm a summary element
+                    </summary>
+                    Details element under a summary element
+                </details>
+                <br /><br />
+                <hr />
+            <!---------------------------------------------------------------------------------------------------->
+                <aside>
+                    <!-- The <aside> HTML element represents a portion of a document
+                    whose content is only indirectly related to the document's main
+                    content. Asides are frequently presented as sidebars or call-out
+                    boxes.
+                    -->
+                    I'm a aside element
+                </aside>
+                <br /><br />
+                <hr />
+            <!---------------------------------------------------------------------------------------------------->
+            </section>
+        </main>
+        <!---------------------------------------------------------------------------------------------------->
+        <footer>
+            <div class="border_test">
+                <a href="#abcd">Go to abcd id &nbsp;</a>&nbsp; &nbsp;&nbsp;&nbsp;
+                <a href="#bottom">Bottom (not working)</a>
+            </div>
+            <a href="#top">Top</a>
+            <br />
+            <a href="#">Top</a>
+            <br />
+            <a href="mailto:test@test.com" target="_blank">E-mail (new tab)</a>
+            <br />
+            <a href="tel:+3859112345678">Test call</a>
+            <br />
+            <a href="javascript:void(0)">javascript:void(0)</a>
+            <br />
+            <a href="https://www.google.com">I AM A LINK TO GOOGLE!!</a>
+            <br />
+            <a href="https://www.google.com" target="_blank">Google new tab</a>
+            <br />
+            <a href="http://www.google.com">GOOGLE!! (non-https)</a>
+            <br />
+            <a href="www.google.com">I AM A LINK TO GOOGLE!! (not working)</a>
+        </footer>
+        <!---------------------------------------------------------------------------------------------------->
+    </body>
+</html>

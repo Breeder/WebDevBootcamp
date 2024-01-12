@@ -1,0 +1,49 @@
+*******************************************************************************
+- What is MVC
+*******************************************************************************
+ Model-View-Controller is a software architectural design pattern commonly used
+ for developing user interfaces that divide the program logic into three
+ interconnected elements. It separates the information itself from the
+ presentation of the same information and the interaction of the user with that
+ information. Basically, when user interacts with the View, the View will
+ notify the Controller about a certain event and that Controller will then
+ update the Model which then alters the View that it has changed after which
+ the view will grab the data from the Model and update itself.
+
+*******************************************************************************
+- Pronunciation
+*******************************************************************************
+ Italicized (ajtalisajzd or italisajzd)
+ Bullet point
+ Ephemeral (efemeral)
+
+*******************************************************************************
+- Differences Between HTML, CSS and JavaScript
+*******************************************************************************
+ These are the only technologies we need as website developers and the browser
+ expects and understands. While they are languages, not all of them are are
+ programming languages.
+
+ In the example 'The Purple Dinosaur Dances', HTML is the noun, CSS is the
+ adjective and the JavaScript is the verb. HTML defines the DOM (Document
+ Object Model), CSS affects how it looks like and JavaScript controls its
+ behavior.
+
+*******************************************************************************
+- Explain first-class functions
+*******************************************************************************
+ A programming language is said to have First-class functions when functions in
+ that language are treated like any other variable. For example, in such a
+ language, a function can be passed as an argument to other functions, can be
+ returned by another function and can be assigned as a value to a variable.
+
+*******************************************************************************
+- What do URL, URI and UDI and mean?
+*******************************************************************************
+ URL -> Uniform Resource Locator
+ URI -> Uniform Resource Identifier
+ UDI -> Universal Document Identifier
+
+ To access a Web component, a client supplies a unique universal identifier,
+ called a URL (uniform resource locator) or URI (uniform resource identifier)
+ (formally called Universal Document Identifier (UDI)).

@@ -1,0 +1,88 @@
+*******************************************************************************
+- What is the difference between REM and px?
+*******************************************************************************
+ 1 REM (root ephemeral unit) adapts itself to the resolution choices of its
+ user! Yes, the CSS design and HTML will adapt to the preferences defined by
+ the user in the browser.
+
+ By default 1 rem = 16 pixels, but you can for example define in your
+ preferences that 1 rem = 24 pixels. This will allow for a larger and more
+ readable font design.
+
+ rem is a relative unit related to the root font sizes (the r in rem stands for
+ root). So most of the time, 1rem = 16px , however, if the root font-size was
+ changed (remember this could be done by the users or the developer) e.g. to
+ 24px then 1rem = 24px
+
+ You have probably already seen this feature 0n an iPhone for example. A "zoom"
+ effect on messages, e-mails, etc. This responsive display functionality,
+ adapted to user preferences, is a good illustration of the advantage of using
+ REM (relative unit) on your pages.
+
+*******************************************************************************
+- What is the difference between pseudo classes and pseudo-elements
+*******************************************************************************
+ Pseudo-classes enable you to target an element when it's in a particular state,
+ as if you had added a class for that state to the DOM. Pseudo-elements act as
+ if you had added a whole new element to the DOM, and enable you to style that.
+
+*******************************************************************************
+- What is CSS specificity
+*******************************************************************************
+ Specificity is the algorithm used by browsers to determine the CSS declaration
+ that is the most relevant to an element, which in turn, determines the property
+ value to apply to the element.
+
+ Specificity is an algorithm that calculates the weight that is applied to a
+ given CSS declaration. The weight is determined by the number of selectors of
+ each weight category in the selector matching the element (or pseudo-element).
+ If there are two or more declarations providing different property values for
+ the same element, the declaration value in the style block having the matching
+ selector with the greatest algorithmic weight gets applied.
+
+ The specificity algorithm is basically a three-column value of three categories
+ or weights - ID, CLASS, and TYPE - corresponding to the three types of
+ selectors. The value represents the count of selector components in each weight
+ category and is written as ID - CLASS - TYPE. The three columns are created by
+ counting the number of selector components for each selector weight category in
+ the selectors that match the element.
+
+
+ Calculate specificity like this:
+ ------------------------------------------------------------------------
+ Start at 0, add 100 for each ID value, add 10 for each class value (or
+ pseudo-class or attribute selector), add 1 for each element selector or
+ pseudo-element.
+
+ Note: Inline style gets a specificity value of 1000, and is always given
+ the highest priority!
+
+ The selector with the highest specificity value will win and take effect!
+
+*******************************************************************************
+- What is !important in CSS specificity
+*******************************************************************************
+ !important basically ignores any specificity, same as inline styles
+ --------------------------------------------------------------------
+
+ A ! delimiter followed by the important keyword marks the declaration as
+ important. The !important flag alters the rules selecting declarations inside
+ the cascade. A declaration that is not important is called normal.
+
+ To mark a declaration important, add the important flag (!important) after the
+ value in the declaration. While white space is allowed between the delimiter
+ and the keyword, the flag is generally written as !important without any white
+ space.
+
+ The !important comes after the value of the property value pair declaration,
+ preceded by at least one space. The important flag must be the last token in
+ the declaration. In other words, there can be white space and comments between
+ the flag and the declaration's ending semicolon, but nothing else.
+
+ selector {
+  property: value; /* normal declaration */
+  property: value !important; /* important declaration (preferred) */
+  property: value ! important; /* important declaration (not preferred) */
+ }
+
+

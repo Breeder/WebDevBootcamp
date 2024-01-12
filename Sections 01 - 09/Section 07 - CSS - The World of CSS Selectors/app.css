@@ -1,0 +1,184 @@
+/* Universal selector (selects everything) */
+/* * {
+    background-color: cyan;
+} */
+
+/* Element selector */
+body { /* Select all the <body>'s elements */
+  background-color: #f1faee;
+}
+
+/* Element selector */
+button { /* Select all the <button>'s elements */
+  font-size: 30px;
+  background-color: #a8dadc;
+}
+
+/* Selector list */
+h1, h2 { /* Select all the <h1>'s and <h2>'s elements */
+  color: #1d3557;
+}
+
+/* ID selector */
+#signup{
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+/* Element selector */
+span { /* Select all the <span>'s elements */
+  color: #457b9d;
+}
+
+/* Class selector */
+.tag { /* Select all the classes named "tag */
+  background-color: #e63946;
+  color: #f1faee;
+  font-size: 16px;
+}
+
+/* Descendant selectors */
+.post a { /* select all <a>'s that are nested inside the class "post" */
+  color: #457b9d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Descendant selectors */
+footer a { /* select all <a>'s that are nested inside the <footer>'s elements */
+  color: #e63946;
+}
+
+/* Adjacent selector (so called combinators) */
+h2 + button { /* Select only the paragraphs that are immediately preceded by an <h1> */
+  font-size: 20px;
+}
+
+/* Direct child selector */
+footer > a { /* Select only the <li>'s that are direct children of a <footer> element */
+  color: #457b9d;
+}
+
+/* Attribute selector */
+input[type="password"] { /* Select all input elements where the type attribute is set to "password"  */
+  color: greenyellow;  /* We can select any attribute, for example we can put section[class="post"] */
+}                        /* instead of the .post. We can also use section.post to select sections     */
+                         /* with the class of post                                                    */
+
+/* Attribute selector */
+a[href*="google"]{  /* Select <a> elements with an href containing "example", $ is used instead to find */
+  color: #1d3557; /* the word at the ending (case insensitive) and we can also use ~= to find the     */
+}                   /* containing word */
+
+/* Internal links, beginning with "#" */
+a[href^="#"] {
+background-color: gold;
+}
+
+/* Links with "example" anywhere in the URL */
+a[href*="example"] {
+background-color: silver;
+}
+
+/* Links with "insensitive" anywhere in the URL,
+ regardless of capitalization */
+a[href*="insensitive" i] {
+color: cyan;
+}
+
+/* Links with "cAsE" anywhere in the URL,
+with matching capitalization */
+a[href*="cAsE" s] {
+color: pink;
+}
+
+/* Links that end in ".org" */
+a[href$=".org"] {
+color: red;
+}
+
+/* Links that start with "https://" and end in ".org" */
+a[href^="https://"][href$=".org"]
+{
+color: green;
+}
+
+/* All divs with a `lang` attribute are bold. */
+div[lang] {
+font-weight: bold;
+}
+
+/* All divs without a `lang` attribute are italicized. */
+div:not([lang]) {
+font-style: italic;
+}
+
+/* All divs in US English are blue. */
+div[lang~="en-us"] {
+color: blue;
+}
+
+/* All divs in Portuguese are green. */
+div[lang="pt"] {
+color: green;
+}
+
+/* All divs in Chinese are red, whether
+ simplified (zh-Hans-CN) or traditional (zh-Hant-TW). */
+div[lang|="zh"] {
+color: red;
+}
+
+/* All divs with a Traditional Chinese
+ `data-lang` are purple. */
+/* Note: You could also use hyphenated attributes
+ without double quotes */
+div[data-lang="zh-Hant-TW"] {
+color: purple;
+}
+
+/* Pseudo class */
+.post a:hover { /* defines a special state of the selected element, in this case a 'hover' */
+  text-decoration: underline;
+}
+
+/* Pseudo class */
+.post button:active {
+  background-color: #02c39a;
+}
+
+/* Pseudo class */
+.post:nth-of-type(2n){
+  background-color: #dfe8dc;
+}
+
+/* Pseudo element */
+h2::first-letter {
+  font-size: 50px;
+}
+
+/* Pseudo element */
+p::first-line {
+  color: purple;
+}
+
+/* Pseudo element */
+p::selection {
+  background-color: #fcbf49;
+}
+
+/* Pseudo class */
+.post button:hover {
+  background-color: #e63946;
+  color: #f1faee;
+}
+
+/* Pseudo class */
+button:hover {
+  background-color: olive;
+}
+
+/* Element selector with important flag */
+button {
+  background-color: magenta !important;
+}

@@ -1,0 +1,4 @@
+/* Selector list */
+h1,h2 { /* Select all the <h1>'s and <h2>'s elements */
+  color: olivedrab;
+}

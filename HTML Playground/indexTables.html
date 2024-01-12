@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tables Demo</title>
+    </head>
+    <body>
+        <h1>Heaviest Birds</h1>
+        <table>
+            <!-- The <table> HTML element represents tabular data — that is,
+            information presented in a two-dimensional table comprised of
+            rows and columns of cells containing data.
+            -->
+            <thead>
+                <!-- The <thead> HTML element defines a set of rows defining
+                the head of the columns of the table.
+                -->
+                <tr>
+                    <!-- The <tr> HTML element defines a row of cells in a table. The
+                    row's cells can then be established using a mix of <td> (data cell)
+                    and <th> (header cell) elements.
+                    -->
+                    <th>Animal</th>
+                    <th>Average mass [kg (lb)]</th>
+                    <th>Maximum mass [kg (lb)]</th>
+                    <th>Flighted</th>
+                    <!-- The <th> HTML element defines a cell as the header
+                        of a group of table cells. The exact nature of this group
+                        is defined by the scope and headers attributes.
+                        -->
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- The <tbody> HTML element encapsulates a set of table rows
+                (<tr> elements), indicating that they comprise the body of the
+                table (<table>).
+                -->
+                <tr>
+                    <td>Ostrich</td>
+                    <td>104 (230)</td>
+                    <td>156.8 (346)</td>
+                    <td>No</td>
+                    <!-- The <td> HTML element defines a cell of a table that contains
+                        data. It participates in the table model.
+                        -->
+                </tr>
+                <tr>
+                    <td>Somali Ostrich</td>
+                    <td>90 (200)</td>
+                    <td>130 (287)</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Wild Turkey</td>
+                    <td>13.5 (29.8)</td>
+                    <td>39 (86)</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <!-- The <tfoot> HTML element defines a set of rows summarizing the
+                columns of the table.
+                -->
+                <tr>
+                    <th>Animal</th>
+                    <th>Average mass [kg (lb)]</th>
+                    <th>Maximum mass [kg (lb)]</th>
+                    <th>Flighted</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>V2</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Animal</th>
+                    <th colspan="2">Average Mass</th>
+                    <th rowspan="2">Flighted</th>
+                    <!-- Rowspan attribute contains a non-negative integer value that
+                        indicates for how many rows the cell extends. Its default value
+                        is 1; if its value is set to 0, it extends until the end of the
+                        table section (<thead>, <tbody>, <tfoot>, even if implicitly
+                        defined), that the cell belongs to. Values higher than 65534
+                        are clipped down to 65534.
+
+                        Colspan attribute contains a non-negative integer value that
+                        indicates for how many columns the cell extends. Its default
+                        value is 1. Values higher than 1000 will be considered as
+                        incorrect and will be set to the default value (1).
+                        -->
+                </tr>
+                <tr>
+                    <th>KG</th>
+                    <th>LB</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Ostrich</td>
+                    <td>104</td>
+                    <td>230</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Somali Ostrich</td>
+                    <td>90</td>
+                    <td>200</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Wild Turkey</td>
+                    <td>13.5</td>
+                    <td>29.8</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
