@@ -27,7 +27,7 @@ console.log(y); // Reference Error: y is not defined */
 // This is an example from the book 'JavaScript: The Definitive Guide (7th Edition)',
 // page 90 with one additional fix in the first line (see comments)
 
-const geval = (string) => {eval(string)}; // Using another name does a global eval (fixed the original line from the example which was: const geval = eval;)
+/* const geval = (string) => {eval(string)}; // Using another name does a global eval (fixed the original line from the example which was: const geval = eval;)
 let x = "global", y = "global";           // Two global variables
 
 function f() {                // This function does a local eval
@@ -41,4 +41,5 @@ function g() {                // This function does a global eval
     return y;                 // Return unchanged local variable
 }
 console.log(f(), x); // Local variable changed: prints "localchanged global":
-console.log(g(), y); // Global variable changed: prints "local globalchanged":
+console.log(g(), y); // Global variable changed: prints "local globalchanged": */
+

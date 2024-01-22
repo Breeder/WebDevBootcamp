@@ -4,7 +4,7 @@ from datetime import timedelta as time
 from itertools import chain
 
 courses = [
-    {'name': "Web Development", 'progress': time(hours=14, minutes=32), 'total': time(hours=73, minutes=30), 'section': "Section:13, Lecture: 141"},
+    {'name': "Web Development", 'progress': time(hours=14, minutes=32+37), 'total': time(hours=73, minutes=30), 'section': "Section:14, Lecture: 149"},
 ]
 
 exercises = [
