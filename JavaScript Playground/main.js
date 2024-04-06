@@ -43,5 +43,12 @@ function g() {                // This function does a global eval
 console.log(f(), x); // Local variable changed: prints "localchanged global":
 console.log(g(), y); // Global variable changed: prints "local globalchanged": */
 
-const bla = `test ${6}`
-console.log(bla);
+function sumArray (numbers)
+{
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++)
+        console.log(numbers[i]);
+
+}
+
+sumArray();
